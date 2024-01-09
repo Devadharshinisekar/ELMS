@@ -1,0 +1,621 @@
+2023-03-30 15:44:02.177 +05:30 [INF] User profile is available. Using 'C:\Users\skart\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-30 15:44:26.636 +05:30 [INF] User profile is available. Using 'C:\Users\skart\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-30 15:44:26.788 +05:30 [INF] Now listening on: http://localhost:5279
+2023-03-30 15:44:26.797 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-30 15:44:26.799 +05:30 [INF] Hosting environment: Development
+2023-03-30 15:44:26.824 +05:30 [INF] Content root path: C:\Users\skart\ELMSApplication
+2023-03-30 15:44:27.057 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/ - -
+2023-03-30 15:44:27.076 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-03-30 15:44:27.121 +05:30 [INF] Executing endpoint 'Leave.Controllers.HomeController.Index (ELMSApplication)'
+2023-03-30 15:44:27.158 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Leave.Controllers.HomeController (ELMSApplication).
+2023-03-30 15:44:31.421 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:44:31.609 +05:30 [INF] Executed ViewResult - view Index executed in 203.6757ms.
+2023-03-30 15:44:31.613 +05:30 [INF] Executed action Leave.Controllers.HomeController.Index (ELMSApplication) in 4453.4537ms
+2023-03-30 15:44:31.613 +05:30 [INF] Executed endpoint 'Leave.Controllers.HomeController.Index (ELMSApplication)'
+2023-03-30 15:44:31.677 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/ - - - 200 - text/html;+charset=utf-8 4620.0577ms
+2023-03-30 15:44:34.071 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Employee/Login - -
+2023-03-30 15:44:34.075 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:44:34.078 +05:30 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ELMSApplication.Controllers.EmployeeController (ELMSApplication).
+2023-03-30 15:44:34.265 +05:30 [INF] Executing ViewResult, running view Login.
+2023-03-30 15:44:34.318 +05:30 [INF] Executed ViewResult - view Login executed in 54.7933ms.
+2023-03-30 15:44:34.319 +05:30 [INF] Executed action ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication) in 240.2071ms
+2023-03-30 15:44:34.319 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:44:34.321 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Employee/Login - - - 200 - text/html;+charset=utf-8 249.6156ms
+2023-03-30 15:44:42.678 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5279/Employee/Login application/x-www-form-urlencoded 214
+2023-03-30 15:44:42.686 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:44:42.718 +05:30 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ELMSApplication.Employee) on controller ELMSApplication.Controllers.EmployeeController (ELMSApplication).
+2023-03-30 15:44:49.142 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[@__employee_EmployeeId_0='?' (Size = 75), @__employee_Password_1='?' (Size = 75)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[EmployeeId], [e].[EmployeeName], [e].[IsAdmin], [e].[Password]
+FROM [Employee] AS [e]
+WHERE [e].[EmployeeId] = @__employee_EmployeeId_0 AND [e].[Password] = @__employee_Password_1
+2023-03-30 15:44:49.225 +05:30 [INF] Accessing expired session, Key:cd82bf09-db81-a545-2901-a0a0520b4d1c
+2023-03-30 15:44:49.226 +05:30 [INF] Executing RedirectResult, redirecting to /Leave/Index.
+2023-03-30 15:44:49.228 +05:30 [INF] Executed action ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication) in 6509.2623ms
+2023-03-30 15:44:49.228 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:44:49.230 +05:30 [INF] Session started; Key:cd82bf09-db81-a545-2901-a0a0520b4d1c, Id:7eabffd9-0ce9-ff4f-bc97-9617e659fd16
+2023-03-30 15:44:49.238 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5279/Employee/Login application/x-www-form-urlencoded 214 - 302 0 - 6560.2236ms
+2023-03-30 15:44:49.238 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Index - -
+2023-03-30 15:44:49.240 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:44:49.243 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:44:56.667 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[@__employeeId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] = @__employeeId_0
+2023-03-30 15:44:56.696 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:44:56.735 +05:30 [INF] Executed ViewResult - view Index executed in 39.4809ms.
+2023-03-30 15:44:56.738 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 7494.4025ms
+2023-03-30 15:44:56.738 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:44:56.743 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Index - - - 200 - text/html;+charset=utf-8 7504.4104ms
+2023-03-30 15:45:00.674 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Create - -
+2023-03-30 15:45:00.677 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:45:00.679 +05:30 [INF] Route matched with {action = "Create", controller = "Leave"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:45:00.684 +05:30 [INF] Executing ViewResult, running view Create.
+2023-03-30 15:45:00.722 +05:30 [INF] Executed ViewResult - view Create executed in 41.8083ms.
+2023-03-30 15:45:00.723 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Create (ELMSApplication) in 43.6817ms
+2023-03-30 15:45:00.723 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:45:00.723 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Create - - - 200 - text/html;+charset=utf-8 48.3837ms
+2023-03-30 15:45:11.765 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5279/Leave/Create application/x-www-form-urlencoded 333
+2023-03-30 15:45:11.766 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:45:11.777 +05:30 [INF] Route matched with {action = "Create", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ELMSApplication.Leave) on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:45:12.019 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 75), @p3='?' (DbType = DateTime2), @p4='?' (Size = 75)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Leave] ([EmployeeId], [EndDate], [LeaveType], [StartDate], [Status])
+OUTPUT INSERTED.[LeaveId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2023-03-30 15:45:23.423 +05:30 [INF] Executing RedirectResult, redirecting to /Leave.
+2023-03-30 15:45:23.423 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Create (ELMSApplication) in 11645.4487ms
+2023-03-30 15:45:23.423 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:45:23.424 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5279/Leave/Create application/x-www-form-urlencoded 333 - 302 0 - 11658.5153ms
+2023-03-30 15:45:23.471 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:45:23.471 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:45:23.479 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:45:23.488 +05:30 [INF] Accessing expired session, Key:cd82bf09-db81-a545-2901-a0a0520b4d1c
+2023-03-30 15:46:59.348 +05:30 [INF] User profile is available. Using 'C:\Users\skart\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-30 15:46:59.434 +05:30 [INF] Now listening on: http://localhost:5279
+2023-03-30 15:46:59.439 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-30 15:46:59.440 +05:30 [INF] Hosting environment: Development
+2023-03-30 15:46:59.440 +05:30 [INF] Content root path: C:\Users\skart\ELMSApplication
+2023-03-30 15:47:03.011 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:47:03.032 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-03-30 15:47:03.095 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:47:03.129 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:47:03.250 +05:30 [INF] Accessing expired session, Key:cd82bf09-db81-a545-2901-a0a0520b4d1c
+2023-03-30 15:47:04.299 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] IS NULL
+2023-03-30 15:47:04.350 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:47:04.439 +05:30 [INF] Executed ViewResult - view Index executed in 88.2545ms.
+2023-03-30 15:47:04.444 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 1313.2223ms
+2023-03-30 15:47:04.445 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:47:04.475 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 1464.5385ms
+2023-03-30 15:47:07.110 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/ - -
+2023-03-30 15:47:07.113 +05:30 [INF] Executing endpoint 'Leave.Controllers.HomeController.Index (ELMSApplication)'
+2023-03-30 15:47:07.117 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Leave.Controllers.HomeController (ELMSApplication).
+2023-03-30 15:47:07.119 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:47:07.129 +05:30 [INF] Executed ViewResult - view Index executed in 10.7735ms.
+2023-03-30 15:47:07.129 +05:30 [INF] Executed action Leave.Controllers.HomeController.Index (ELMSApplication) in 12.2727ms
+2023-03-30 15:47:07.129 +05:30 [INF] Executed endpoint 'Leave.Controllers.HomeController.Index (ELMSApplication)'
+2023-03-30 15:47:07.130 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/ - - - 200 - text/html;+charset=utf-8 19.9259ms
+2023-03-30 15:47:08.192 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Employee/Login - -
+2023-03-30 15:47:08.195 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:47:08.196 +05:30 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ELMSApplication.Controllers.EmployeeController (ELMSApplication).
+2023-03-30 15:47:08.200 +05:30 [INF] Executing ViewResult, running view Login.
+2023-03-30 15:47:08.262 +05:30 [INF] Executed ViewResult - view Login executed in 63.2496ms.
+2023-03-30 15:47:08.262 +05:30 [INF] Executed action ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication) in 65.9833ms
+2023-03-30 15:47:08.262 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:47:08.263 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Employee/Login - - - 200 - text/html;+charset=utf-8 70.0595ms
+2023-03-30 15:47:12.908 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5279/Employee/Login application/x-www-form-urlencoded 214
+2023-03-30 15:47:12.910 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:47:12.930 +05:30 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ELMSApplication.Employee) on controller ELMSApplication.Controllers.EmployeeController (ELMSApplication).
+2023-03-30 15:47:13.018 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__employee_EmployeeId_0='?' (Size = 75), @__employee_Password_1='?' (Size = 75)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[EmployeeId], [e].[EmployeeName], [e].[IsAdmin], [e].[Password]
+FROM [Employee] AS [e]
+WHERE [e].[EmployeeId] = @__employee_EmployeeId_0 AND [e].[Password] = @__employee_Password_1
+2023-03-30 15:47:13.081 +05:30 [INF] Accessing expired session, Key:cd82bf09-db81-a545-2901-a0a0520b4d1c
+2023-03-30 15:47:13.082 +05:30 [INF] Executing RedirectResult, redirecting to /Leave/Index.
+2023-03-30 15:47:13.083 +05:30 [INF] Executed action ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication) in 152.4479ms
+2023-03-30 15:47:13.083 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:47:13.085 +05:30 [INF] Session started; Key:cd82bf09-db81-a545-2901-a0a0520b4d1c, Id:3d46cd2d-f105-d8c5-e605-50fde1f11c4f
+2023-03-30 15:47:13.086 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5279/Employee/Login application/x-www-form-urlencoded 214 - 302 0 - 177.6422ms
+2023-03-30 15:47:13.089 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Index - -
+2023-03-30 15:47:13.090 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:47:13.090 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:47:13.157 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__employeeId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] = @__employeeId_0
+2023-03-30 15:47:13.162 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:47:13.185 +05:30 [INF] Executed ViewResult - view Index executed in 23.3795ms.
+2023-03-30 15:47:13.185 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 94.9676ms
+2023-03-30 15:47:13.185 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:47:13.186 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Index - - - 200 - text/html;+charset=utf-8 96.7531ms
+2023-03-30 15:47:16.713 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Edit/6 - -
+2023-03-30 15:47:16.715 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Edit (ELMSApplication)'
+2023-03-30 15:47:16.731 +05:30 [INF] Route matched with {action = "Edit", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Nullable`1[System.Int32]) on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:47:16.753 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[LeaveId] = @__p_0
+2023-03-30 15:47:16.801 +05:30 [INF] Executing ViewResult, running view Edit.
+2023-03-30 15:47:16.849 +05:30 [INF] Executed ViewResult - view Edit executed in 49.0192ms.
+2023-03-30 15:47:16.849 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Edit (ELMSApplication) in 118.5275ms
+2023-03-30 15:47:16.850 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Edit (ELMSApplication)'
+2023-03-30 15:47:16.850 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Edit/6 - - - 200 - text/html;+charset=utf-8 136.9201ms
+2023-03-30 15:47:51.391 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:47:51.391 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:47:51.391 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:47:51.392 +05:30 [INF] Accessing expired session, Key:cd82bf09-db81-a545-2901-a0a0520b4d1c
+2023-03-30 15:47:51.400 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] IS NULL
+2023-03-30 15:47:51.400 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:47:51.407 +05:30 [INF] Executed ViewResult - view Index executed in 7.0159ms.
+2023-03-30 15:47:51.408 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 16.343ms
+2023-03-30 15:47:51.408 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:47:51.410 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 17.2846ms
+2023-03-30 15:47:51.549 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/lib/bootstrap/dist/css/bootstrap.min.css.map - -
+2023-03-30 15:47:51.549 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - -
+2023-03-30 15:47:51.556 +05:30 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js.map was not modified
+2023-03-30 15:47:51.557 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map - - - 304 - text/plain 7.8719ms
+2023-03-30 15:47:51.558 +05:30 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css.map was not modified
+2023-03-30 15:47:51.559 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/lib/bootstrap/dist/css/bootstrap.min.css.map - - - 304 - text/plain 9.9122ms
+2023-03-30 15:47:54.964 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:47:54.964 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:47:54.964 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:47:54.964 +05:30 [INF] Accessing expired session, Key:cd82bf09-db81-a545-2901-a0a0520b4d1c
+2023-03-30 15:47:54.968 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] IS NULL
+2023-03-30 15:47:54.969 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:47:54.972 +05:30 [INF] Executed ViewResult - view Index executed in 3.6672ms.
+2023-03-30 15:47:54.972 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 7.9331ms
+2023-03-30 15:47:54.972 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:47:54.972 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 8.6271ms
+2023-03-30 15:47:55.023 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/favicon.ico - -
+2023-03-30 15:47:55.024 +05:30 [INF] The file /favicon.ico was not modified
+2023-03-30 15:47:55.024 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/favicon.ico - - - 304 - image/x-icon 0.8346ms
+2023-03-30 15:47:55.584 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Create - -
+2023-03-30 15:47:55.585 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:47:55.586 +05:30 [INF] Route matched with {action = "Create", controller = "Leave"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:47:55.589 +05:30 [INF] Executing ViewResult, running view Create.
+2023-03-30 15:47:55.609 +05:30 [INF] Executed ViewResult - view Create executed in 22.2737ms.
+2023-03-30 15:47:55.609 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Create (ELMSApplication) in 22.8724ms
+2023-03-30 15:47:55.609 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:47:55.609 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Create - - - 200 - text/html;+charset=utf-8 25.0146ms
+2023-03-30 15:47:57.140 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/ - -
+2023-03-30 15:47:57.141 +05:30 [INF] Executing endpoint 'Leave.Controllers.HomeController.Index (ELMSApplication)'
+2023-03-30 15:47:57.141 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Leave.Controllers.HomeController (ELMSApplication).
+2023-03-30 15:47:57.141 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:47:57.142 +05:30 [INF] Executed ViewResult - view Index executed in 0.8408ms.
+2023-03-30 15:47:57.142 +05:30 [INF] Executed action Leave.Controllers.HomeController.Index (ELMSApplication) in 1.5587ms
+2023-03-30 15:47:57.143 +05:30 [INF] Executed endpoint 'Leave.Controllers.HomeController.Index (ELMSApplication)'
+2023-03-30 15:47:57.143 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/ - - - 200 - text/html;+charset=utf-8 2.2444ms
+2023-03-30 15:47:58.175 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Employee/Login - -
+2023-03-30 15:47:58.176 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:47:58.176 +05:30 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ELMSApplication.Controllers.EmployeeController (ELMSApplication).
+2023-03-30 15:47:58.176 +05:30 [INF] Executing ViewResult, running view Login.
+2023-03-30 15:47:58.180 +05:30 [INF] Executed ViewResult - view Login executed in 4.1806ms.
+2023-03-30 15:47:58.180 +05:30 [INF] Executed action ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication) in 4.5148ms
+2023-03-30 15:47:58.180 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:47:58.181 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Employee/Login - - - 200 - text/html;+charset=utf-8 5.1801ms
+2023-03-30 15:48:02.245 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5279/Employee/Login application/x-www-form-urlencoded 214
+2023-03-30 15:48:02.246 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:48:02.246 +05:30 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ELMSApplication.Employee) on controller ELMSApplication.Controllers.EmployeeController (ELMSApplication).
+2023-03-30 15:48:02.257 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__employee_EmployeeId_0='?' (Size = 75), @__employee_Password_1='?' (Size = 75)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[EmployeeId], [e].[EmployeeName], [e].[IsAdmin], [e].[Password]
+FROM [Employee] AS [e]
+WHERE [e].[EmployeeId] = @__employee_EmployeeId_0 AND [e].[Password] = @__employee_Password_1
+2023-03-30 15:48:02.259 +05:30 [INF] Accessing expired session, Key:cd82bf09-db81-a545-2901-a0a0520b4d1c
+2023-03-30 15:48:02.259 +05:30 [INF] Executing RedirectResult, redirecting to /Leave/Index.
+2023-03-30 15:48:02.260 +05:30 [INF] Executed action ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication) in 13.6157ms
+2023-03-30 15:48:02.260 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:48:02.260 +05:30 [INF] Session started; Key:cd82bf09-db81-a545-2901-a0a0520b4d1c, Id:6b23a032-d812-962c-2e92-8044d0213fcd
+2023-03-30 15:48:02.260 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5279/Employee/Login application/x-www-form-urlencoded 214 - 302 0 - 14.4548ms
+2023-03-30 15:48:02.266 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Index - -
+2023-03-30 15:48:02.266 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:02.267 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:02.271 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__employeeId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] = @__employeeId_0
+2023-03-30 15:48:02.273 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:48:02.290 +05:30 [INF] Executed ViewResult - view Index executed in 16.7154ms.
+2023-03-30 15:48:02.290 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 23.377ms
+2023-03-30 15:48:02.290 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:02.290 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Index - - - 200 - text/html;+charset=utf-8 24.1135ms
+2023-03-30 15:48:03.255 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Details/6 - -
+2023-03-30 15:48:03.256 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Details (ELMSApplication)'
+2023-03-30 15:48:03.265 +05:30 [INF] Route matched with {action = "Details", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:03.273 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[LeaveId] = @__id_0
+2023-03-30 15:48:03.280 +05:30 [INF] Executing ViewResult, running view Details.
+2023-03-30 15:48:03.291 +05:30 [INF] Executed ViewResult - view Details executed in 12.4345ms.
+2023-03-30 15:48:03.291 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Details (ELMSApplication) in 26.0612ms
+2023-03-30 15:48:03.291 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Details (ELMSApplication)'
+2023-03-30 15:48:03.291 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Details/6 - - - 200 - text/html;+charset=utf-8 35.6210ms
+2023-03-30 15:48:04.328 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:48:04.328 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:04.328 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:04.330 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__employeeId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] = @__employeeId_0
+2023-03-30 15:48:04.337 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:48:04.346 +05:30 [INF] Executed ViewResult - view Index executed in 9.6404ms.
+2023-03-30 15:48:04.346 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 17.9133ms
+2023-03-30 15:48:04.346 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:04.346 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 18.4965ms
+2023-03-30 15:48:05.513 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Details/7 - -
+2023-03-30 15:48:05.513 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Details (ELMSApplication)'
+2023-03-30 15:48:05.513 +05:30 [INF] Route matched with {action = "Details", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:05.515 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[LeaveId] = @__id_0
+2023-03-30 15:48:05.515 +05:30 [INF] Executing ViewResult, running view Details.
+2023-03-30 15:48:05.522 +05:30 [INF] Executed ViewResult - view Details executed in 6.8732ms.
+2023-03-30 15:48:05.523 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Details (ELMSApplication) in 10.3798ms
+2023-03-30 15:48:05.524 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Details (ELMSApplication)'
+2023-03-30 15:48:05.524 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Details/7 - - - 200 - text/html;+charset=utf-8 11.1122ms
+2023-03-30 15:48:06.856 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Edit/7 - -
+2023-03-30 15:48:06.857 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Edit (ELMSApplication)'
+2023-03-30 15:48:06.857 +05:30 [INF] Route matched with {action = "Edit", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Nullable`1[System.Int32]) on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:06.863 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[LeaveId] = @__p_0
+2023-03-30 15:48:06.868 +05:30 [INF] Executing ViewResult, running view Edit.
+2023-03-30 15:48:06.872 +05:30 [INF] Executed ViewResult - view Edit executed in 3.9131ms.
+2023-03-30 15:48:06.872 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Edit (ELMSApplication) in 15.0691ms
+2023-03-30 15:48:06.872 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Edit (ELMSApplication)'
+2023-03-30 15:48:06.872 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Edit/7 - - - 200 - text/html;+charset=utf-8 15.7338ms
+2023-03-30 15:48:07.710 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:48:07.710 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:07.710 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:07.712 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__employeeId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] = @__employeeId_0
+2023-03-30 15:48:07.715 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:48:07.721 +05:30 [INF] Executed ViewResult - view Index executed in 6.387ms.
+2023-03-30 15:48:07.721 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 11.5557ms
+2023-03-30 15:48:07.721 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:07.722 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 12.2318ms
+2023-03-30 15:48:08.992 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Delete/7 - -
+2023-03-30 15:48:08.993 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Delete (ELMSApplication)'
+2023-03-30 15:48:09.000 +05:30 [INF] Route matched with {action = "Delete", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Nullable`1[System.Int32]) on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:09.003 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[LeaveId] = @__id_0
+2023-03-30 15:48:09.006 +05:30 [INF] Executing ViewResult, running view Delete.
+2023-03-30 15:48:09.018 +05:30 [INF] Executed ViewResult - view Delete executed in 14.1944ms.
+2023-03-30 15:48:09.019 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Delete (ELMSApplication) in 18.7242ms
+2023-03-30 15:48:09.019 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Delete (ELMSApplication)'
+2023-03-30 15:48:09.019 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Delete/7 - - - 200 - text/html;+charset=utf-8 27.5987ms
+2023-03-30 15:48:10.788 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:48:10.788 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:10.789 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:10.790 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__employeeId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] = @__employeeId_0
+2023-03-30 15:48:10.797 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:48:10.803 +05:30 [INF] Executed ViewResult - view Index executed in 5.8678ms.
+2023-03-30 15:48:10.803 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 14.6632ms
+2023-03-30 15:48:10.803 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:10.804 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 15.2612ms
+2023-03-30 15:48:13.152 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Create - -
+2023-03-30 15:48:13.152 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:48:13.152 +05:30 [INF] Route matched with {action = "Create", controller = "Leave"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:13.153 +05:30 [INF] Executing ViewResult, running view Create.
+2023-03-30 15:48:13.156 +05:30 [INF] Executed ViewResult - view Create executed in 3.371ms.
+2023-03-30 15:48:13.156 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Create (ELMSApplication) in 3.709ms
+2023-03-30 15:48:13.156 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:48:13.156 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Create - - - 200 - text/html;+charset=utf-8 4.3681ms
+2023-03-30 15:48:19.949 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:48:19.950 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:19.950 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:19.952 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__employeeId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] = @__employeeId_0
+2023-03-30 15:48:19.953 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:48:19.965 +05:30 [INF] Executed ViewResult - view Index executed in 12.8421ms.
+2023-03-30 15:48:19.966 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 15.7925ms
+2023-03-30 15:48:19.966 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:19.966 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 16.6769ms
+2023-03-30 15:48:23.075 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Create - -
+2023-03-30 15:48:23.075 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:48:23.075 +05:30 [INF] Route matched with {action = "Create", controller = "Leave"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:23.076 +05:30 [INF] Executing ViewResult, running view Create.
+2023-03-30 15:48:23.077 +05:30 [INF] Executed ViewResult - view Create executed in 1.6167ms.
+2023-03-30 15:48:23.078 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Create (ELMSApplication) in 2.1488ms
+2023-03-30 15:48:23.078 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:48:23.078 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Create - - - 200 - text/html;+charset=utf-8 3.0141ms
+2023-03-30 15:48:39.021 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5279/Leave/Create application/x-www-form-urlencoded 335
+2023-03-30 15:48:39.021 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:48:39.032 +05:30 [INF] Route matched with {action = "Create", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ELMSApplication.Leave) on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:39.138 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 75), @p3='?' (DbType = DateTime2), @p4='?' (Size = 75)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Leave] ([EmployeeId], [EndDate], [LeaveType], [StartDate], [Status])
+OUTPUT INSERTED.[LeaveId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2023-03-30 15:48:39.176 +05:30 [INF] Executing RedirectResult, redirecting to /Leave.
+2023-03-30 15:48:39.176 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Create (ELMSApplication) in 144.825ms
+2023-03-30 15:48:39.176 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:48:39.177 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5279/Leave/Create application/x-www-form-urlencoded 335 - 302 0 - 156.2114ms
+2023-03-30 15:48:39.180 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:48:39.180 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:39.180 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:39.180 +05:30 [INF] Accessing expired session, Key:cd82bf09-db81-a545-2901-a0a0520b4d1c
+2023-03-30 15:48:39.181 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] IS NULL
+2023-03-30 15:48:39.182 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:48:39.183 +05:30 [INF] Executed ViewResult - view Index executed in 1.7932ms.
+2023-03-30 15:48:39.184 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 3.7686ms
+2023-03-30 15:48:39.184 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:39.184 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 4.4078ms
+2023-03-30 15:48:40.748 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:48:40.748 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:40.748 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:48:40.749 +05:30 [INF] Accessing expired session, Key:cd82bf09-db81-a545-2901-a0a0520b4d1c
+2023-03-30 15:48:40.752 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] IS NULL
+2023-03-30 15:48:40.753 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:48:40.759 +05:30 [INF] Executed ViewResult - view Index executed in 6.2467ms.
+2023-03-30 15:48:40.760 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 11.3138ms
+2023-03-30 15:48:40.760 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:48:40.760 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 11.8790ms
+2023-03-30 15:49:26.984 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Create - -
+2023-03-30 15:49:26.985 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:49:26.985 +05:30 [INF] Route matched with {action = "Create", controller = "Leave"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:49:26.985 +05:30 [INF] Executing ViewResult, running view Create.
+2023-03-30 15:49:26.987 +05:30 [INF] Executed ViewResult - view Create executed in 2.0527ms.
+2023-03-30 15:49:26.987 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Create (ELMSApplication) in 2.6179ms
+2023-03-30 15:49:26.987 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:49:26.988 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Create - - - 200 - text/html;+charset=utf-8 3.2800ms
+2023-03-30 15:49:28.316 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:49:28.317 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:49:28.317 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:49:28.317 +05:30 [INF] Accessing expired session, Key:cd82bf09-db81-a545-2901-a0a0520b4d1c
+2023-03-30 15:49:28.320 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] IS NULL
+2023-03-30 15:49:28.321 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:49:28.362 +05:30 [INF] Executed ViewResult - view Index executed in 41.0208ms.
+2023-03-30 15:49:28.362 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 44.8155ms
+2023-03-30 15:49:28.362 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:49:28.362 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 45.3404ms
+2023-03-30 15:51:31.189 +05:30 [INF] User profile is available. Using 'C:\Users\skart\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-30 15:51:31.302 +05:30 [INF] Now listening on: http://localhost:5279
+2023-03-30 15:51:31.307 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-30 15:51:31.308 +05:30 [INF] Hosting environment: Development
+2023-03-30 15:51:31.309 +05:30 [INF] Content root path: C:\Users\skart\ELMSApplication
+2023-03-30 15:52:00.304 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/ - -
+2023-03-30 15:52:00.338 +05:30 [WRN] Failed to determine the https port for redirect.
+2023-03-30 15:52:00.396 +05:30 [INF] Executing endpoint 'Leave.Controllers.HomeController.Index (ELMSApplication)'
+2023-03-30 15:52:00.433 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Leave.Controllers.HomeController (ELMSApplication).
+2023-03-30 15:52:00.452 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:52:00.596 +05:30 [INF] Executed ViewResult - view Index executed in 139.5571ms.
+2023-03-30 15:52:00.599 +05:30 [INF] Executed action Leave.Controllers.HomeController.Index (ELMSApplication) in 165.9538ms
+2023-03-30 15:52:00.599 +05:30 [INF] Executed endpoint 'Leave.Controllers.HomeController.Index (ELMSApplication)'
+2023-03-30 15:52:00.609 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/ - - - 200 - text/html;+charset=utf-8 304.3660ms
+2023-03-30 15:52:03.472 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Employee/Login - -
+2023-03-30 15:52:03.475 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:52:03.477 +05:30 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ELMSApplication.Controllers.EmployeeController (ELMSApplication).
+2023-03-30 15:52:03.613 +05:30 [INF] Executing ViewResult, running view Login.
+2023-03-30 15:52:03.660 +05:30 [INF] Executed ViewResult - view Login executed in 47.8013ms.
+2023-03-30 15:52:03.660 +05:30 [INF] Executed action ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication) in 183.2928ms
+2023-03-30 15:52:03.660 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:52:03.664 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Employee/Login - - - 200 - text/html;+charset=utf-8 191.8308ms
+2023-03-30 15:52:08.763 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5279/Employee/Login application/x-www-form-urlencoded 214
+2023-03-30 15:52:08.768 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:52:08.793 +05:30 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ELMSApplication.Employee) on controller ELMSApplication.Controllers.EmployeeController (ELMSApplication).
+2023-03-30 15:52:09.799 +05:30 [INF] Executed DbCommand (33ms) [Parameters=[@__employee_EmployeeId_0='?' (Size = 75), @__employee_Password_1='?' (Size = 75)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[EmployeeId], [e].[EmployeeName], [e].[IsAdmin], [e].[Password]
+FROM [Employee] AS [e]
+WHERE [e].[EmployeeId] = @__employee_EmployeeId_0 AND [e].[Password] = @__employee_Password_1
+2023-03-30 15:52:09.885 +05:30 [INF] Accessing expired session, Key:cd82bf09-db81-a545-2901-a0a0520b4d1c
+2023-03-30 15:52:09.888 +05:30 [INF] Executing RedirectResult, redirecting to /Leave/Index.
+2023-03-30 15:52:09.890 +05:30 [INF] Executed action ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication) in 1096.8194ms
+2023-03-30 15:52:09.890 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:52:09.892 +05:30 [INF] Session started; Key:cd82bf09-db81-a545-2901-a0a0520b4d1c, Id:ea5b2517-b5c2-70e6-de0f-a27ec3ea20a9
+2023-03-30 15:52:09.899 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5279/Employee/Login application/x-www-form-urlencoded 214 - 302 0 - 1136.0911ms
+2023-03-30 15:52:09.899 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Index - -
+2023-03-30 15:52:09.899 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:52:09.903 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:52:09.995 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__employeeId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] = @__employeeId_0
+2023-03-30 15:52:10.022 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:52:10.049 +05:30 [INF] Executed ViewResult - view Index executed in 28.601ms.
+2023-03-30 15:52:10.050 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 146.7801ms
+2023-03-30 15:52:10.051 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:52:10.061 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Index - - - 200 - text/html;+charset=utf-8 161.4321ms
+2023-03-30 15:52:15.440 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Create - -
+2023-03-30 15:52:15.442 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:52:15.444 +05:30 [INF] Route matched with {action = "Create", controller = "Leave"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:52:15.448 +05:30 [INF] Executing ViewResult, running view Create.
+2023-03-30 15:52:15.490 +05:30 [INF] Executed ViewResult - view Create executed in 43.6115ms.
+2023-03-30 15:52:15.490 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Create (ELMSApplication) in 45.3799ms
+2023-03-30 15:52:15.490 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:52:15.490 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Create - - - 200 - text/html;+charset=utf-8 49.8794ms
+2023-03-30 15:52:24.699 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5279/Leave/Create application/x-www-form-urlencoded 332
+2023-03-30 15:52:24.700 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:52:24.713 +05:30 [INF] Route matched with {action = "Create", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ELMSApplication.Leave) on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:52:24.920 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 75), @p3='?' (DbType = DateTime2), @p4='?' (Size = 75)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Leave] ([EmployeeId], [EndDate], [LeaveType], [StartDate], [Status])
+OUTPUT INSERTED.[LeaveId]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2023-03-30 15:52:24.956 +05:30 [INF] Executing RedirectResult, redirecting to /Leave.
+2023-03-30 15:52:24.957 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Create (ELMSApplication) in 243.8027ms
+2023-03-30 15:52:24.957 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Create (ELMSApplication)'
+2023-03-30 15:52:24.957 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5279/Leave/Create application/x-www-form-urlencoded 332 - 302 0 - 258.1044ms
+2023-03-30 15:52:24.960 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:52:24.960 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:52:24.960 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:52:24.964 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__employeeId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] = @__employeeId_0
+2023-03-30 15:52:24.964 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:52:24.977 +05:30 [INF] Executed ViewResult - view Index executed in 12.6955ms.
+2023-03-30 15:52:24.977 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 16.7979ms
+2023-03-30 15:52:24.977 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:52:24.977 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 17.4044ms
+2023-03-30 15:52:28.601 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Edit/6 - -
+2023-03-30 15:52:28.602 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Edit (ELMSApplication)'
+2023-03-30 15:52:28.608 +05:30 [INF] Route matched with {action = "Edit", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(System.Nullable`1[System.Int32]) on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:52:28.628 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[LeaveId] = @__p_0
+2023-03-30 15:52:28.636 +05:30 [INF] Executing ViewResult, running view Edit.
+2023-03-30 15:52:28.659 +05:30 [INF] Executed ViewResult - view Edit executed in 24.5211ms.
+2023-03-30 15:52:28.659 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Edit (ELMSApplication) in 50.9983ms
+2023-03-30 15:52:28.660 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Edit (ELMSApplication)'
+2023-03-30 15:52:28.660 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Edit/6 - - - 200 - text/html;+charset=utf-8 58.3400ms
+2023-03-30 15:52:30.285 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5279/Leave/Edit/6 application/x-www-form-urlencoded 344
+2023-03-30 15:52:30.286 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Edit (ELMSApplication)'
+2023-03-30 15:52:30.295 +05:30 [INF] Route matched with {action = "Edit", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Edit(Int32, ELMSApplication.Leave) on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:52:30.315 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = DateTime2), @p2='?' (Size = 75), @p3='?' (DbType = DateTime2), @p4='?' (Size = 75)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Leave] SET [EmployeeId] = @p0, [EndDate] = @p1, [LeaveType] = @p2, [StartDate] = @p3, [Status] = @p4
+OUTPUT 1
+WHERE [LeaveId] = @p5;
+2023-03-30 15:52:30.322 +05:30 [INF] Executing RedirectResult, redirecting to /Leave.
+2023-03-30 15:52:30.323 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Edit (ELMSApplication) in 27.2391ms
+2023-03-30 15:52:30.323 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Edit (ELMSApplication)'
+2023-03-30 15:52:30.323 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5279/Leave/Edit/6 application/x-www-form-urlencoded 344 - 302 0 - 37.4634ms
+2023-03-30 15:52:30.326 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:52:30.326 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:52:30.326 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:52:30.330 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__employeeId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] = @__employeeId_0
+2023-03-30 15:52:30.333 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:52:30.345 +05:30 [INF] Executed ViewResult - view Index executed in 11.9415ms.
+2023-03-30 15:52:30.345 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 18.4811ms
+2023-03-30 15:52:30.345 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:52:30.345 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 19.2851ms
+2023-03-30 15:52:31.504 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Details/7 - -
+2023-03-30 15:52:31.504 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Details (ELMSApplication)'
+2023-03-30 15:52:31.513 +05:30 [INF] Route matched with {action = "Details", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(System.Nullable`1[System.Int32]) on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:52:31.521 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[LeaveId] = @__id_0
+2023-03-30 15:52:31.523 +05:30 [INF] Executing ViewResult, running view Details.
+2023-03-30 15:52:31.537 +05:30 [INF] Executed ViewResult - view Details executed in 15.0371ms.
+2023-03-30 15:52:31.537 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Details (ELMSApplication) in 24.3101ms
+2023-03-30 15:52:31.537 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Details (ELMSApplication)'
+2023-03-30 15:52:31.538 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Details/7 - - - 200 - text/html;+charset=utf-8 33.7203ms
+2023-03-30 15:52:33.138 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:52:33.139 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:52:33.139 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:52:33.141 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__employeeId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] = @__employeeId_0
+2023-03-30 15:52:33.142 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:52:33.156 +05:30 [INF] Executed ViewResult - view Index executed in 14.5522ms.
+2023-03-30 15:52:33.156 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 17.6148ms
+2023-03-30 15:52:33.156 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:52:33.157 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 18.2909ms
+2023-03-30 15:52:34.327 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Delete/8 - -
+2023-03-30 15:52:34.327 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Delete (ELMSApplication)'
+2023-03-30 15:52:34.335 +05:30 [INF] Route matched with {action = "Delete", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Nullable`1[System.Int32]) on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:52:34.338 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[LeaveId] = @__id_0
+2023-03-30 15:52:34.342 +05:30 [INF] Executing ViewResult, running view Delete.
+2023-03-30 15:52:34.357 +05:30 [INF] Executed ViewResult - view Delete executed in 17.657ms.
+2023-03-30 15:52:34.357 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Delete (ELMSApplication) in 21.8154ms
+2023-03-30 15:52:34.357 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Delete (ELMSApplication)'
+2023-03-30 15:52:34.357 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Delete/8 - - - 200 - text/html;+charset=utf-8 30.3220ms
+2023-03-30 15:52:35.453 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5279/Leave/Delete/8 application/x-www-form-urlencoded 192
+2023-03-30 15:52:35.454 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.DeleteConfirmed (ELMSApplication)'
+2023-03-30 15:52:35.460 +05:30 [INF] Route matched with {action = "Delete", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteConfirmed(Int32) on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:52:35.467 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[LeaveId] = @__p_0
+2023-03-30 15:52:35.515 +05:30 [INF] Executed DbCommand (38ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Leave]
+OUTPUT 1
+WHERE [LeaveId] = @p0;
+2023-03-30 15:52:35.528 +05:30 [INF] Executing RedirectResult, redirecting to /Leave.
+2023-03-30 15:52:35.528 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.DeleteConfirmed (ELMSApplication) in 67.5767ms
+2023-03-30 15:52:35.528 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.DeleteConfirmed (ELMSApplication)'
+2023-03-30 15:52:35.529 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5279/Leave/Delete/8 application/x-www-form-urlencoded 192 - 302 0 - 74.9743ms
+2023-03-30 15:52:35.537 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave - -
+2023-03-30 15:52:35.537 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:52:35.538 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:52:35.540 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__employeeId_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+WHERE [l].[EmployeeId] = @__employeeId_0
+2023-03-30 15:52:35.543 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:52:35.572 +05:30 [INF] Executed ViewResult - view Index executed in 29.0034ms.
+2023-03-30 15:52:35.572 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 34.4009ms
+2023-03-30 15:52:35.572 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:52:35.573 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave - - - 200 - text/html;+charset=utf-8 35.6168ms
+2023-03-30 15:52:41.959 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/ - -
+2023-03-30 15:52:41.959 +05:30 [INF] Executing endpoint 'Leave.Controllers.HomeController.Index (ELMSApplication)'
+2023-03-30 15:52:41.960 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Leave.Controllers.HomeController (ELMSApplication).
+2023-03-30 15:52:41.960 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:52:41.961 +05:30 [INF] Executed ViewResult - view Index executed in 0.9959ms.
+2023-03-30 15:52:41.962 +05:30 [INF] Executed action Leave.Controllers.HomeController.Index (ELMSApplication) in 2.0283ms
+2023-03-30 15:52:41.962 +05:30 [INF] Executed endpoint 'Leave.Controllers.HomeController.Index (ELMSApplication)'
+2023-03-30 15:52:41.962 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/ - - - 200 - text/html;+charset=utf-8 2.8293ms
+2023-03-30 15:52:42.984 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Employee/Login - -
+2023-03-30 15:52:42.984 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:52:42.984 +05:30 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ELMSApplication.Controllers.EmployeeController (ELMSApplication).
+2023-03-30 15:52:42.984 +05:30 [INF] Executing ViewResult, running view Login.
+2023-03-30 15:52:42.988 +05:30 [INF] Executed ViewResult - view Login executed in 3.7201ms.
+2023-03-30 15:52:42.989 +05:30 [INF] Executed action ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication) in 4.9869ms
+2023-03-30 15:52:42.989 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:52:42.991 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Employee/Login - - - 200 - text/html;+charset=utf-8 6.4577ms
+2023-03-30 15:52:48.915 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5279/Employee/Login application/x-www-form-urlencoded 218
+2023-03-30 15:52:48.915 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:52:48.915 +05:30 [INF] Route matched with {action = "Login", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ELMSApplication.Employee) on controller ELMSApplication.Controllers.EmployeeController (ELMSApplication).
+2023-03-30 15:52:48.919 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__employee_EmployeeId_0='?' (Size = 75), @__employee_Password_1='?' (Size = 75)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[EmployeeId], [e].[EmployeeName], [e].[IsAdmin], [e].[Password]
+FROM [Employee] AS [e]
+WHERE [e].[EmployeeId] = @__employee_EmployeeId_0 AND [e].[Password] = @__employee_Password_1
+2023-03-30 15:52:48.921 +05:30 [INF] Executing RedirectResult, redirecting to /Leave/Index.
+2023-03-30 15:52:48.921 +05:30 [INF] Executed action ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication) in 6.1542ms
+2023-03-30 15:52:48.922 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.EmployeeController.Login (ELMSApplication)'
+2023-03-30 15:52:48.922 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5279/Employee/Login application/x-www-form-urlencoded 218 - 302 0 - 6.8417ms
+2023-03-30 15:52:48.930 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5279/Leave/Index - -
+2023-03-30 15:52:48.930 +05:30 [INF] Executing endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:52:48.930 +05:30 [INF] Route matched with {action = "Index", controller = "Leave"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller ELMSApplication.Controllers.LeaveController (ELMSApplication).
+2023-03-30 15:52:48.937 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[LeaveId], [l].[EmployeeId], [l].[EndDate], [l].[LeaveType], [l].[StartDate], [l].[Status]
+FROM [Leave] AS [l]
+2023-03-30 15:52:48.937 +05:30 [INF] Executing ViewResult, running view Index.
+2023-03-30 15:52:48.953 +05:30 [INF] Executed ViewResult - view Index executed in 16.0801ms.
+2023-03-30 15:52:48.953 +05:30 [INF] Executed action ELMSApplication.Controllers.LeaveController.Index (ELMSApplication) in 22.6503ms
+2023-03-30 15:52:48.953 +05:30 [INF] Executed endpoint 'ELMSApplication.Controllers.LeaveController.Index (ELMSApplication)'
+2023-03-30 15:52:48.953 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5279/Leave/Index - - - 200 - text/html;+charset=utf-8 23.4538ms
